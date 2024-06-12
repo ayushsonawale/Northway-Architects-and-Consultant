@@ -1,0 +1,109 @@
+.about-container {
+    font-family: 'Arial, sans-serif';
+    color: #333;
+    padding: 0px;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+    /* Ensure this container can position its children absolutely */
+    overflow: hidden;
+    /* Hide overflow to prevent animation overflow issues */
+}
+
+.lottie-container {
+    position: absolute;
+    top: 0;
+    right: -48;
+    /* Position the animation on the right side */
+    width: 50%;
+    /* Adjust width as needed */
+    height: 100%;
+    z-index: 1;
+    /* Ensure it's in front of the text */
+    pointer-events: none;
+    /* Allow clicks to pass through */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.2;
+    /* Adjust opacity to ensure text readability */
+}
+
+.about-content-wrapper {
+    position: relative;
+    /* Position relative to contain the absolute child */
+    z-index: 0;
+    /* Ensure it is behind the Lottie animation */
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-header h1 {
+    font-size: 3.0rem;
+    font-weight: 300;
+    color: #333;
+    position: relative;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.about-header h1 span {
+    font-weight: bold;
+    color: #d23669;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-header h1::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+
+.about-header h1:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.about-header .tagline {
+    color: #d23669;
+    font-size: 1.2em;
+    margin-top: -12px;
+    animation: slideInFromRight 1s ease-in-out;
+}
+
+.about-content {
+    background: #ecf0f1;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-content p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Animation for the tagline */
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

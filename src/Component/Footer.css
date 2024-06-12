@@ -1,0 +1,20 @@
+.footer {
+    background-color: rgb(201, 192, 192);
+    color: #d23669;
+    padding: 26px;
+    text-align: center;
+    position: relative;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

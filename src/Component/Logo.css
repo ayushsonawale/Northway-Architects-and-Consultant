@@ -1,0 +1,14 @@
+/* Logo.css */
+.logo-container {
+    top: 0;
+    right: 0;
+    left: auto;
+    
+}
+
+
+.logo {
+    width: 200px;
+    /* adjust size as needed */
+    height: auto;
+}

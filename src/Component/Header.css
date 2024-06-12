@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px;
+    background-color: rgb(201, 192, 192);
+    color: white;
+    position: sticky;
+    top: 0;
+    width: 99%;
+    z-index: 1000;
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.header.scrolled {
+    background-color: rgba(221, 217, 217, 0.8);
+    backdrop-filter: blur(10px);
+    /* Slightly transparent */
+}
+
+.header .logo {
+    flex: 1;
+    padding-left: 13px;
+}
+
+.header .navigation {
+    flex: 2;
+}

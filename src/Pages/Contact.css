@@ -1,0 +1,129 @@
+/* Container for the contact form and contact information */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 65px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Contact form styling */
+.contact-left {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+}
+
+.contact-form h2 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #333;
+    position: relative;
+    display: inline-block;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-form h2 span {
+    font-weight: bold;
+    color: #333;
+    /* Change the color to #333 */
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact-form h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+
+.contact-form h2:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 10px;
+    /* Reduced margin to decrease height */
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #d23669;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Contact information styling */
+.contact-right {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-right h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.contact-right p {
+    margin-bottom: 5px;
+    /* Reduced margin to decrease height */
+    font-size: 14px;
+    color: #666;
+}
+
+.lottie-animation {
+    width: 48%;
+    max-width: 200px;
+    /* Reduced max-width to fit better */
+    margin-bottom: 10px;
+    /* Reduced margin to decrease height */
+}
