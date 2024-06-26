@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Northway-Architects-and-Consultant/static/css/main.1d2c42ce.css",
+    "main.js": "/Northway-Architects-and-Consultant/static/js/main.a423615f.js",
+    "static/js/453.f5a35cdf.chunk.js": "/Northway-Architects-and-Consultant/static/js/453.f5a35cdf.chunk.js",
+    "static/media/h2.jpg": "/Northway-Architects-and-Consultant/static/media/h2.8037882b863058f533da.jpg",
+    "static/media/h1.jpg": "/Northway-Architects-and-Consultant/static/media/h1.a94fc34184daedb45312.jpg",
+    "static/media/h4.jpg": "/Northway-Architects-and-Consultant/static/media/h4.4d7d432d94f797437560.jpg",
+    "static/media/h3.jpg": "/Northway-Architects-and-Consultant/static/media/h3.2a2afbbba64a3d923853.jpg",
+    "static/media/Logo.png": "/Northway-Architects-and-Consultant/static/media/Logo.cc054e398b020aa874ec.png",
+    "index.html": "/Northway-Architects-and-Consultant/index.html",
+    "main.1d2c42ce.css.map": "/Northway-Architects-and-Consultant/static/css/main.1d2c42ce.css.map",
+    "main.a423615f.js.map": "/Northway-Architects-and-Consultant/static/js/main.a423615f.js.map",
+    "453.f5a35cdf.chunk.js.map": "/Northway-Architects-and-Consultant/static/js/453.f5a35cdf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1d2c42ce.css",
+    "static/js/main.a423615f.js"
+  ]
+}
