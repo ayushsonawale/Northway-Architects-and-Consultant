@@ -7,6 +7,7 @@ import h2 from '../Assets/h2.jpg';
 import h3 from '../Assets/h3.jpg';
 import h4 from '../Assets/h4.jpg';
 import h1 from '../Assets/h1.jpg';
+import Loader from 'react-loaders'
 
 const Home = () => {
     const [text] = useTypewriter({
@@ -129,6 +130,7 @@ const Home = () => {
                     </div>
                 </div>
             )}
+            <Loader type="pacman" />
         </div>
     );
 };
